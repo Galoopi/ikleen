@@ -1,0 +1,12 @@
+.view,body,html{height:100%}
+.navbar{background-color:rgba(0,0,0,.2)}
+.page-footer{background-color:#148c8d}
+.top-nav-collapse{background-color:#148c8d}
+@media only screen and (max-width:768px)
+{
+  .navbar{background-color:#1C2331}
+}
+
+h3,h2 {
+  color: #fb751f
+}

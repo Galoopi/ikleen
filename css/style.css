@@ -19,3 +19,14 @@ body,
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
   background-color: #148c8d; }
+
+  .my-custom-scrollbar {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+
+ 

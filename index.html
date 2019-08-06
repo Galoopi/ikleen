@@ -84,7 +84,7 @@
   <!-- Navbar -->
 
   <!-- Full Page Intro -->
-  <div class="view "  style="background-image: src('../img/svg/cleaner.jpg')">
+  <div class="view "  style="background-image: src("./img/svg/cleaner.jpg")">
 
 
     <!-- Mask & flexbox options-->
@@ -493,16 +493,16 @@
         <h2 class="my-5 h3 text-center" >Instructions</h2>
         <div class="table-wrapper-scroll-y my-custom-scrollbar">
           <!-- Table -->
-          <table class="table table-bordered">
-            <thead>
-              <tr>
+          <table class="table table-bordered " id='Mytable'>
+            <thead id="thead">
+              <tr id="myRow">
                 <th scope="col">Type Of Cleaning</th>
 
                 <th scope="col">Concentrate</th>
 
               </tr>
             </thead>
-            <tbody>
+            <tbody id='tbody'>
               <tr>
                 <th scope="row">Heavy cleaning</th>
                 <td>Undiluted</td>
@@ -734,7 +734,56 @@
   document.getElementById('contact-form').submit();
 
   }
+
+
 </script>
+<script >
+
+   var products = [
+      
+      {name: 'Heavy cleaning', concentrate: 'Undiluted'},
+      {name: 'hairbrush', concentrate: '1:3'},
+      {name: 'shampoo', concentrate: '1:35'} :
+    ]
+
+const section = document.querySelctor('instructions');
+const tableHead = document.querySelctor('thead');
+const tbody = document.querySelctor('tbody');
+var rowItems = tabelhead.tbody.products.map(function(p) {
+    return '<tr><th>p.name</th><td>p.concentrate</td></tr>'
+  }); 
+
+function createTable(thead) {
+  return 
+
+}
+  
+  
+ 
+/
+//  var rowItems = products.map(function(p) {
+//     return '<tr><td>' + p.name + '</td><td>' + p.concentrate '</td></tr>'
+//   });
+
+//  var tableHead = document.getElementById('thead'); 
+
+// var createTable = '<table> ' + tableHead + rowItems.join('') + ' </table>'
+
+
+//document.getElementById("Mytable").innerHTML = generateTableHead;
+
+
+
+
+
+
+
+
+
+
+
+       
+    </script>
 </body>
 
 </html>
